@@ -28,6 +28,7 @@ main,aside{
 
 .card-icon{
     width: 6%;
+    min-width: 6%;
     background-color:#293036;
     padding: .8em;
     border-radius: 50%;
