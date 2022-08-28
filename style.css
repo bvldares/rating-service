@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+    box-sizing: border-box;
+    background-color: #141519;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+main,aside{
+    margin: auto;
+    width: 90%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #202731;
+    padding: 1.5em;
+    box-sizing: border-box;
+    border-radius: 1em;
+}
+
+.card-icon{
+    width: 6%;
+    background-color:#293036;
+    padding: .8em;
+    border-radius: 50%;
+}
+
+.card-title{
+    font-size: 1.6rem;
+    margin:.8em 0;
+}
+
+.card-body{
+    font-size: .875rem;
+    margin: 0;
+    color: #8D949E;
+    line-height: 1.5;
+}
+
+.cards-rates{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.rate{
+    box-sizing: border-box;
+    background-color: #293036;
+    border-radius: 50%;
+    padding: .7em 1em;
+    color: #8D949E;
+    font-size: 1.125rem;
+    font-weight: bolder;
+    cursor: pointer;
+    list-style: none;
+}
+
+#btn{
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color:#FC7615;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+}
+
+
+#btn:hover,
+#btn:focus{
+    color: #FC7615;
+    background-color: #fff;
+}
+
+
+.active{
+    background-color: #FC7615;
+    color: #fff;
+}
+
+
+aside{
+    align-items: center;
+    text-align: center;
+}
+
+.thanks-img{
+    width: 50%;
+    margin: 1em .5em;
+}
+
+.card-selection{
+    background-color: #293036;
+    padding: .5em 1em;
+    border-radius: 2em;
+    font-size: .875rem;
+    color: #FC7615;
+    opacity: 70%;
+    margin-bottom: .3em;
+}
+
+aside .card-body{
+    margin-bottom: 1em;
+}
+
+
+@media (min-width:600px){
+    html{
+        font-size: 22px;
+    }
+
+    main,aside{
+        max-width: 400px;
+    }
+
+
+    .cards-rates li{
+        font-size: .875rem;
+    }
+
+    .thanks-img{
+        width: 65%;
+    }
+}
